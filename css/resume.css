@@ -582,6 +582,8 @@ input:focus, textarea:focus {
 
 .wrap {
   position: relative;
+  
+  
 }
 
 .slide-content {
@@ -638,7 +640,7 @@ input:focus, textarea:focus {
 }
 
 #arrow-lefta {
-  border-width: 0px 0px 0px 0;
+  border-width: 0px 0 0px 0px;
   border-color: transparent #000 transparent transparent;
   left: 0;
   margin-left: 30px;
@@ -705,7 +707,7 @@ input:focus, textarea:focus {
 }
 
 #arrow-rightd {
-  border-width: 0px 0 0px 0px;
+  border-width:0px 0 0px 0px;
   border-color: transparent transparent transparent #000;
   right: 0;
   margin-right: 30px;
@@ -784,3 +786,24 @@ input:focus, textarea:focus {
     width: 100%;
   }
 }
+
+.slide-content {
+  position: relative;
+}
+
+.image-container {
+  position: relative;
+}
+
+.overlay-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.7;
+  width: 130%; /* Adjust the size as desired */
+  height: auto; /* Maintain aspect ratio */
+  pointer-events: none; /* Prevents the overlay image from capturing mouse events */
+}
+
+
